@@ -20,7 +20,9 @@ const StudentphaseRouter = require('./controllers/Studentphase')
 
 
 const app = express()
-const port = 5000
+
+// Declare your PORT
+const port = process.env.PORT || 5000;
 
 // parse application/x-www-form-urlencoded for picking data or params
 // in post request of forms 
