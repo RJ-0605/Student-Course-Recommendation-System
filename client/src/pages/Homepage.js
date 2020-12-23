@@ -24,7 +24,7 @@ export default function Home({isLoggedIn, setIsLoggedIn , username,jwttoken,user
   
   		if (isLoggedIn){
   		
-					axios.post('http://localhost:5000/tests/posttopythonapi', { id })
+					axios.post(`/posttopythonapi`, { id })
 					.then(function (response) {
 						
 						console.log(response.data)

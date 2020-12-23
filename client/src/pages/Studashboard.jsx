@@ -35,7 +35,7 @@ export default function Studashboard({isLoggedIn, setIsLoggedIn , username,jwtto
 	
 	
 	const getslist = () => {
-		axios.post('http://localhost:5000/studentphase/returnsubjectsdetailsfor-userId', {userId})
+		axios.post('/studentphase/returnsubjectsdetailsfor-userId', {userId})
 		.then(function (response) {
 			
 			console.log(response.data)
@@ -55,7 +55,7 @@ export default function Studashboard({isLoggedIn, setIsLoggedIn , username,jwtto
 	const postData = () => {
 	
 		let finalsub = { list , totalnum }
-		axios.post(`http://localhost:5000/api/postfromstudashboard`, { finalsub })
+		axios.post(`/api/postfromstudashboard`, { finalsub })
     .then(res => {
       console.log(res);
       console.log(res.data);

@@ -221,7 +221,7 @@ const options = [
     //converted arrays will be here 
     
     
-    axios.post(`http://localhost:5000/signup`, { user ,final_array })
+    axios.post(`signup`, { user ,final_array })
       .then(res => {
         console.log(res);
         console.log(res.data);

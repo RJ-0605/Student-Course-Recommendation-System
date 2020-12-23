@@ -30,7 +30,7 @@ export default function Login({isLoggedIn, setIsLoggedIn,username,userId,jwttoke
           
     };
       
-      axios.post(`http://localhost:5000/login`, { user })
+      axios.post(`/login`, { user })
       .then(res => {
         console.log(res);
         console.log(res.data);
