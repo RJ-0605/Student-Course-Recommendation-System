@@ -35,7 +35,7 @@ export default function Studashboard({isLoggedIn, setIsLoggedIn , username,jwtto
 	
 	
 	const getslist = () => {
-		axios.post('/studentphase/returnsubjectsdetailsfor-userId', {userId})
+		axios.post(`/studentphase/returnsubjectsdetailsfor-userId`, {userId})
 		.then(function (response) {
 			
 			console.log(response.data)
