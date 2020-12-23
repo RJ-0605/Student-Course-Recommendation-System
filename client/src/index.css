@@ -1,0 +1,104 @@
+/* body {
+	background-color:white ;
+	background-size: cover;
+   background-repeat: no-repeat;
+    height: auto;
+    overflow:hidden;
+
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+
+/* style made changes for theme context */
+/* 
+.light {
+  background-color: white;
+  color: black;
+}
+
+.dark {
+  background-color: black;
+  color: white
+}
+
+.light a {
+  color: blue !important;
+}
+
+.dark a {
+  color: yellow !important;
+}
+
+.light button {
+  color: white;
+  background-color: black;
+}
+
+.dark button {
+  color: black;
+  background-color: white;
+} */
+
+
+body {
+		margin: 0;
+		
+		}
+
+
+.jumbotron {
+  height: 100%;
+  margin-bottom: 0px !important;
+}
+
+.jumbotron.home {
+  background-image: url(https://www.ibm.com/blogs/internet-of-things/wp-content/uploads/2016/09/Buffy_fb.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center; 
+}
+
+.footer {
+  background-color: #ddd;
+}
+
+.article-image-header {
+  height: 400px;
+  background-image: linear-gradient(#eee, #aaa);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center; 
+  overflow: hidden;
+}
+
+.article-image-header img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 0;
+}
+
+.container-dark {
+  background-color: #333 !important;
+  color: #ddd !important;
+}
+
+.container-dark .card, .container-dark .card .card-body {
+  background-color: transparent;
+  color: #d3d3d3
+}
+
+.container-light .card, .container-light .card .card-body {
+  background-color: transparent;
+  color: #3e3e3e
+}

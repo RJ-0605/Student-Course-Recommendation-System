@@ -1,0 +1,186 @@
+
+
+
+
+// creating new account test Postman
+
+{"useremail":"kayd@gmail.com", "password":"butch" , "username":"kobu" , "age" : 39 }
+
+
+
+// updating new account Postman 
+
+{ "username":"kobu" , "age": 49 }
+
+
+
+// updating new account Postman 
+
+// testing  users 
+
+{ 
+		
+	"email"       : "kayd@gmail.com",
+	"firstname"   : "kayda",
+	"lastname"    : "brazo",
+	"gender"      : "female",
+	"race"        : "white",
+	"edulevel"    : "bachelor's degree",
+	"accountType" : "free"   ,
+	"province"    : "accra"  ,
+	"zip"         : "00233"  ,
+	"isTeacher"   : "Yes"    ,
+	"username"    : "Kali"   ,
+	 "age"        : 39       ,
+	 "password"    : "butch"  
+	 
+	 }
+
+
+// testing subjects adding in a new subject with its details independent of colecting   students data
+  
+{ 
+	"title"              :  "English" , 	
+	"subject_code"       : 4 ,
+	"students_count"     : 2 ,
+	"teachers_count"     : 4 
+		 
+	 }
+
+
+
+// testing user selections and their suggested subject codes ,  added subjects selections 
+
+{ 
+
+	"userId"              :  "Kiswahili" , 	
+	"suggested_subject_codes"       : 34 ,
+	"added_subjects_code"     : 2 
+			 
+	 }
+	 
+	 
+	 
+	 
+	 //  testing userselections with userid with test subject codes 
+	 
+	{ 
+
+	"userId"              :  "5fdb27264817473e373f22e8" , 	
+	"suggested_subject_codes"       : [34,75,2]
+		
+	 
+	 } 
+	 
+	 
+	//testing  user registered as teacher  model 
+	
+	 { 
+
+	"userId"              :  "5fdb27264817473e373f22e8" , 	
+	"subjects_to_teach"       : [34,75,2]
+	
+	 }
+	 
+	 
+	 //generate course with userid of user already signedup 
+	 
+	 { 
+
+	"id"              :  "5fdb27264817473e373f22e8" 	
+	
+ 
+	 }
+	 
+	 
+	 //test to get already generated courses displayed
+	 
+	 http://localhost:3000/studentphase/returnsubjectsdetailsfor-userId
+	 
+	 
+	 new procedure 
+	 
+	 
+	(1) first add users
+	 
+	 // testing  users 
+
+{ 
+		
+	"email"       : "kayd@gmail.com",
+	"firstname"   : "kayda",
+	"lastname"    : "brazo",
+	"gender"      : "female",
+	"race"        : "white",
+	"edulevel"    : "bachelor's degree",
+	"accountType" : "free"   ,
+	"province"    : "accra"  ,
+	"zip"         : "00233"  ,
+	"isTeacher"   : "Yes"    ,
+	"username"    : "Kali"   ,
+	 "age"        : 39       ,
+	 "password"    : "butch"  
+	 
+	 }
+
+	 
+	 (2) add these course selections for user in userselections
+	 
+	    a. AI does it the python path 
+	    
+	    
+	    b. or i can manually do it as an admin like this with postman for now 
+	     
+	     http://localhost:5000/tests/userselections
+	     
+	     {
+    "message": {
+        "suggested_subject_codes": [
+            34,
+            75,
+            2
+        ],
+        "added_subjects_code": [],
+        "_id": "5fe27a49fe1ea88990ae9601",
+        "userId": "5fe265782bdc7676e6b4ab36",
+        "__v": 0
+    }
+}
+	 
+	 
+	 (3)  Try to display some subjects based on userId
+	 
+	  well done 
+	 
+	 (4) next thing is to add new subjects
+	 
+			{ 
+				"title"              :  "English" , 	
+				"subject_code"       : 4 ,
+				"students_count"     : 2 ,
+				"teachers_count"     : 4 
+					 
+				 }
+	 
+	 
+	 (5) connect python api on Home so home does course selection  that with use effect before we get to  student dashboard
+	 
+	 well done its done the hoe route handles the python part 
+	 
+	 
+	 
+	 (6) Also taken care so the home route doesnt generate more subjects or hit the python api just because the user exists i also check if the users subjects has already been generated 
+	 
+	 
+	 (7) Design figma 
+	 
+	 (8) Add and subtract courses 
+	 
+	 (9) final Post after changes 
+	 
+	 
+	 
+	 
+	 
+	 
+
