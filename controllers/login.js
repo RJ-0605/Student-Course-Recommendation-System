@@ -4,16 +4,12 @@ const fs = require('fs')
 const loginRouter = require('express').Router()
 const User = require('../models/user')
 
-const cors = require('cors');
-
-var corsOptions = {
-  origin: 'http://localhost:3000/login',
-  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-}
 
 
 
-loginRouter.post('/', cors(corsOptions),  async (request, response) => {
+
+
+loginRouter.post('/' ,  async (request, response) => {
   const body = request.body.user
 
 

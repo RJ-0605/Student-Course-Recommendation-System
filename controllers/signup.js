@@ -3,35 +3,23 @@
 const bcrypt = require('bcrypt')
 const SignupRouter = require('express').Router()
 const User = require('../models/user')
-const cors = require('cors');
 
-var corsOptions = {
-  origin: 'http://localhost:3000/signup',
-  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-}
+
 
 
 
 SignupRouter.get('/', async (request, response, next) => {
 
-// check if user already exist 
 
-  // const users = await User
-  // .find({}).populate('notes', { content: 1, date: 1})
   
-  
-  // this is to serve something in the future 
-  
-  
-  
- // response.json(users.map(user => user.toJSON()))
+ 
   
   response.json("Nothing to get for now only posts are recieved ")
 })
 
 
 
-SignupRouter.post('/',  cors(corsOptions), async (request, response, next) => {
+SignupRouter.post('/' , async (request, response, next) => {
 
    var msg = ""
 	const body = request.body.user
