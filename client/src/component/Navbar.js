@@ -35,13 +35,13 @@ export default function Navbar({isLoggedIn, setIsLoggedIn}) {
             
             { !isLoggedIn &&
               <li className="nav-item">
-                <NavLink className="nav-link" to="/login">Login</NavLink>
+                <NavLink className="nav-link" to="/login-user">Login</NavLink>
               </li>
             }
             
             { !isLoggedIn &&
               <li className="nav-item">
-                <NavLink className="nav-link" to="/signup">Signup</NavLink>
+                <NavLink className="nav-link" to="/signup-user">Signup</NavLink>
               </li>
             }
             

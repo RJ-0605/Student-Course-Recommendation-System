@@ -32,7 +32,7 @@ export default function RouterComponent() {
           />       
           </Route>	
             	
-      	<Route exact path="/signup" >
+      	<Route exact path="/signup-user" >
       	  <SignUp
 		      isLoggedIn ={isLoggedIn} 
 		      setIsLoggedIn = {setIsLoggedIn}      		
@@ -60,7 +60,7 @@ export default function RouterComponent() {
          />       
           </Route>
               
-       <Route exact path="/login" >       
+       <Route exact path="/login-user" >       
         <Login 
 		   isLoggedIn ={isLoggedIn} 
 		   setIsLoggedIn = {setIsLoggedIn}          
