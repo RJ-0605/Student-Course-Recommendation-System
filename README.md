@@ -4,6 +4,9 @@
 
 The Student Course Recommendation API provides personalized course recommendations to students based on their academic history and preferences. The API leverages machine learning algorithms to generate recommendations and stores user data, course information, and selections in a structured MongoDB database.
 
+## DB design 
+ (student-course-recommendation-design.png)
+
 ## Features
 
 - **Personalized Recommendations**: Uses machine learning to suggest courses tailored to each student's profile.
